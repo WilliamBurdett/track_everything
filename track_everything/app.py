@@ -1,12 +1,14 @@
 """
 Personal tracking for everything
 """
+from abc import ABC
+
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 
 
-class TrackEverything(toga.App):
+class TrackEverything(toga.App, ABC):
 
     def startup(self):
         """
@@ -24,4 +26,4 @@ class TrackEverything(toga.App):
 
 
 def main():
-    return TrackEverything()
+    return TrackEverything("TrackEverything", "123")

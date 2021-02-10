@@ -7,20 +7,20 @@ license = "GNU General Public License v3 (GPLv3)"
 author = 'William Burdett'
 author_email = "william.burdett1@gmail.com"
 
-[tool.briefcase.app.trackeverything]
+[tool.briefcase.app.track_everything]
 formal_name = "Track Everything"
 description = "Personal tracking for everything"
 icon = "src/track_everything/resources/track_everything"
-sources = ['src/track_everything']
+sources = ['track_everything']
 requires = []
 
 
-[tool.briefcase.app.trackeverything.macOS]
+[tool.briefcase.app.track_everything.macOS]
 requires = [
     'toga-cocoa>=0.3.0.dev20',
 ]
 
-[tool.briefcase.app.trackeverything.linux]
+[tool.briefcase.app.track_everything.linux]
 requires = [
     'toga-gtk>=0.3.0.dev20',
 ]
@@ -32,18 +32,18 @@ system_requires = [
     'gir1.2-webkit-3.0',
 ]
 
-[tool.briefcase.app.trackeverything.windows]
+[tool.briefcase.app.track_everything.windows]
 requires = [
     'toga-winforms>=0.3.0.dev20',
 ]
 
 # Mobile deployments
-[tool.briefcase.app.trackeverything.iOS]
+[tool.briefcase.app.track_everything.iOS]
 requires = [
     'toga-iOS>=0.3.0.dev20',
 ]
 
-[tool.briefcase.app.trackeverything.android]
+[tool.briefcase.app.track_everything.android]
 requires = [
     'toga-android>=0.3.0.dev20',
 ]
