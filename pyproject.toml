@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Track Everything"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/WilliamBurdett/track_everything"
+license = "GNU General Public License v3 (GPLv3)"
+author = 'William Burdett'
+author_email = "william.burdett1@gmail.com"
+
+[tool.briefcase.app.trackeverything]
+formal_name = "Track Everything"
+description = "Personal tracking for everything"
+icon = "src/track_everything/resources/track_everything"
+sources = ['src/track_everything']
+requires = []
+
+
+[tool.briefcase.app.trackeverything.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.trackeverything.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.trackeverything.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.trackeverything.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.trackeverything.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
